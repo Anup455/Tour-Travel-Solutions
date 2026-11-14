@@ -1,0 +1,5 @@
+tour-travel-frontend/node_modules/
+tour-travel-frontend/dist/
+tour-travel-frontend/.env
+tour-travel-backend/uploads/*
+!tour-travel-backend/uploads/.htaccess
