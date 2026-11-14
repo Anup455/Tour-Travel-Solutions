@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../../middleware/bootstrap.php';require_once __DIR__.'/../../config/database.php';$s=$pdo->query("SELECT id,destination_name,country,description,image FROM destinations WHERE status='active' ORDER BY destination_name");json_out(['destinations'=>$s->fetchAll()]);
