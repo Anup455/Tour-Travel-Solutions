@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../../middleware/bootstrap.php';require_once __DIR__.'/../../config/database.php';require_admin();json_out(['users'=>$pdo->query('SELECT id,name,email,phone,role,status,created_at FROM users ORDER BY created_at DESC')->fetchAll()]);
