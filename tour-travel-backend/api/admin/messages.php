@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../../middleware/bootstrap.php';require_once __DIR__.'/../../config/database.php';require_admin();json_out(['messages'=>$pdo->query('SELECT * FROM contact_messages ORDER BY created_at DESC')->fetchAll()]);
