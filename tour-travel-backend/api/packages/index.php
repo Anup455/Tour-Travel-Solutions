@@ -1,0 +1,1 @@
+<?php require_once __DIR__.'/../../middleware/bootstrap.php';require_once __DIR__.'/../../config/database.php';$s=$pdo->query("SELECT p.*,d.destination_name FROM packages p JOIN destinations d ON d.id=p.destination_id WHERE p.status='active' ORDER BY p.created_at DESC");json_out(['packages'=>$s->fetchAll()]);
